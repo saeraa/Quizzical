@@ -11,3 +11,131 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: floralwhite;    
+}
+
+h1 {
+    padding: 1.5rem 2rem 0rem 2rem;
+    margin: 0 auto;
+    color: rgba(125, 54, 23, .5);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.container {
+    background-color: #FEEBCD; /* blanchedalmond */
+    min-height: 90vh;
+    max-width: 600px; /* 95vw; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.overlay {
+    min-width: 90vw;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question .btn-answer {
+    background-color: #FED69A; 
+    padding: .5rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px grey;
+    font-size: .95rem; 
+    flex-grow: 1;
+    transition: 500ms;
+}
+
+.question .btn-answer:active, .btn-answer:focus, .btn-answer:target,
+button:focus {
+    outline: 2px solid #808080;
+    background-color: rgba(240,255,255,.5); /* azure, 50% opacity */
+}
+
+.question .btn-answer:hover, 
+button:hover {
+    background-color: rgba(125, 54, 23, .4);    
+    box-shadow: 2px 2px 4px black;
+}
+
+.question {
+    border-bottom: 1px solid black;
+    margin: 1rem;
+    padding: .5rem 1.5rem 2.5rem 1.5rem;
+    width: 100%;
+}
+
+.question h2 {
+    white-space: pre-line;    
+    font-size: 1.2rem;
+    margin: 0;
+    margin-bottom: 0.9rem;
+    padding: 0;
+}
+
+.buttons {
+    display: flex;
+    align-items: stretch;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: .9rem;
+    margin-top: 1.5rem;
+}
+
+.check-answers {
+    background-color: #FED69A;
+    padding: .8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px grey;
+    margin: 1.5rem;
+    transition: 500ms;
+}
+
+.start-game {
+    padding: 1rem 2.2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+    background-color: #FED69A;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px grey;
+    transition: 500ms;
+    margin-top: 2rem;
+    color: #75523A; 
+}
+
+#game-over {
+    text-align: center;
+}

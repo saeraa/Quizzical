@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&family=Roboto+Mono&family=Roboto:ital,wght@0,400;0,900;1,400&display=swap');
+
 code {
     font-family: 'Roboto Mono', monospace;
 }
@@ -35,16 +37,19 @@ body {
     padding: 1rem;
 }
 
-h3 {
-    font-family: 'Roboto Mono', monospace;
-    font-style: italic;
+.logo h3 {
+    font-family: 'Cousine', monospace;
+    /* font-style: italic; */
     font-weight: 400;
     color: #67d4b1;
     text-shadow: 0 0 4px #1d372f;
+    padding: 0;
+    margin: 0;
 }
 
 h1 {
-    padding: 1.5rem 2rem 0rem 2rem;
+    font-size: 2.5rem;
+    padding: 1.8rem 2rem 0rem 2rem;
     margin: 0 auto;
     color: #72cfb1;
     font-weight: 900;
@@ -53,7 +58,7 @@ h1 {
 }
 
 .container {
-    background-color: rgba(255, 255, 255, 0.151);
+    background-color: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(5px);
     min-height: 90vh;
     max-width: 600px;
@@ -104,7 +109,7 @@ button:hover {
 }
 
 .question {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(22, 128, 128);
     margin: 1rem;
     padding: .5rem 1.5rem 2.5rem 1.5rem;
     width: 100%;
@@ -116,7 +121,9 @@ button:hover {
     margin: 0;
     margin-bottom: 0.9rem;
     padding: 0;
+    font-weight: 500;
     color: #7de4c4;
+    color: #acffe5;
     text-shadow: 0 0 4px black;
 }
 
@@ -129,36 +136,84 @@ button:hover {
     margin-top: 1.5rem;
 }
 
-.start-game,
+
 .check-answers {
     padding: 1rem 2.2rem;
     font-size: 1rem;
     text-transform: uppercase;
-    font-weight: 900;
+    font-weight: 500;
     letter-spacing: 1px;
     background-color: #084760;
     border: none;
     border-radius: 5px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.307);
     transition: 500ms;
     margin-top: 2rem;
+    margin-bottom: 1rem;
     color: #84eccb;
     font-family: 'Roboto Mono', monospace;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.307);
+}
+
+button {
     cursor: pointer;
+}
+
+.start-game {
+    color: #84eccb;
+    height: 5.5rem;
+    width: 5.5rem;
+    border-radius: 50%;
+    font-weight: 400;
+    text-transform: lowercase;
+    font-family: 'Cousine';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 0;
+    margin-top: 2rem;
+    background: linear-gradient(to top, #084760, #0f6f94);
+    border: 3px solid #07415a;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.307);
 }
 
 .start-game:hover,
 .start-game:active,
-.start-game:focus,
+.start-game:focus {
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.307), inset 0px 0px 13px #084760, inset -2px -2px 4px #0f6f94;
+    color: #68d1b0dc;
+}
+
 .check-answers:hover,
 .check-answers:active,
 .check-answers:focus {
-    background-color: #06374a;
-    box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.541);
+    background-color: #084760;
 }
 
 #game-over {
     text-align: center;
     color: #ff5757;
-    text-shadow: 2px 2px 14px rgba(0, 0, 0, 0.541);
+    text-shadow: 2px 2px 14px rgba(0, 0, 0, 0.241);
+}
+
+.logo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.questionmark {
+    color: rgb(0, 41, 41);
+    color: transparent;
+    font-size: 8em;
+    position: absolute;
+    font-weight: 900;
+    right: 50%;
+    top: 60%;
+    transform: translateY(-50%) translateX(50%);
+    z-index: -1;
+    background: linear-gradient(to bottom, #117ba4, #042d3d, #117ba4);
+    background-clip: text;
 }

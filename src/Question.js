@@ -13,7 +13,7 @@ export default function Question(props) {
         } else if (gameOver && index === correctAnswer) {
             return { backgroundColor: "#9FF9A8" }
         } else if (index === click) {
-            return { backgroundColor: (index === click) ? "#72cfb1" : "" }
+            return { backgroundColor: (index === click) ? "#99EBD2" : "" }
         }
     }
 

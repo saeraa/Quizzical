@@ -101,8 +101,11 @@ export default function App() {
 
       {!gameOn ?
         <div className="overlay container" id="overlay">
-          <h1>quizzical</h1>
-          <h3>JavaScript Edition</h3>
+          <div className="logo">
+            <span className="questionmark">?</span>
+            <h1>quizzical</h1>
+            <h3>JavaScript Edition</h3>
+          </div>
           <button type="text" className="start-game" onClick={startGame}>Start game</button>
         </div>
         :

@@ -4,7 +4,7 @@
 
 ### Made with React
 
-In the [https://scrimba.com/learn/frontend](Frontend Career Path) of [https://scrimba.com](Scrimba) are many solo projects to get through, and this is one of the harder ones.\
+In the [Frontend Career Path](https://scrimba.com/learn/frontend) of [Scrimba](https://scrimba.com) are many solo projects to get through, and this is one of the harder ones.
 
 I have modified the specifications with my own layout, color and typography.
 

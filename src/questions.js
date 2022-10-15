@@ -39,7 +39,7 @@ export const data = [
                     "As much as you want",
                     "One argument"
                 ],
-                "example": "function add(a, b) { \n                 return a + b;\n                 }\n                 add(1, 2);"
+                "example": "function add(a, b) { \n                  return a + b;\n                 }\n \n                 add(1, 2);"
             }, {
 
                 "category": "JavaScript",
@@ -108,7 +108,7 @@ export const data = [
             }, {
 
                 "category": "JavaScript",
-                "question": "What's the output? \n\n function sayHi() { \n   console.log(name); \n   console.log(age); \n   var name = \n 'Lydia'; \n   let age = 21;\n }\n \n sayHi();\n",
+                "question": "What's the output? \n\n function sayHi() { \n    console.log(name); \n   console.log(age); \n   var name = \n 'Lydia'; \n   let age = 21;\n }\n \n sayHi();\n",
                 "correct_answer": "undefined and ReferenceError",
                 "incorrect_answers": [
                     "Lydia and undefined",

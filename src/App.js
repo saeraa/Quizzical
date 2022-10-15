@@ -2,6 +2,9 @@ import React from "react"
 import { data } from "./questions"
 import Question from "./Question"
 import { nanoid } from "nanoid"
+import Particles from "./Particles"
+
+
 
 
 export default function App() {
@@ -95,6 +98,7 @@ export default function App() {
 
   return (
     <>
+
       {!gameOn ?
         <div className="overlay container" id="overlay">
           <h1>quizzical</h1>
@@ -113,6 +117,7 @@ export default function App() {
           </main>
         </div>
       }
+      <Particles />
     </>
   )
 }

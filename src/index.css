@@ -1,50 +1,62 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: 'Roboto Mono', monospace;
 }
-
 
 * {
     box-sizing: border-box;
 }
 
-body, html {
-    font-family: 'Lato', sans-serif;
+body,
+html {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
 
+.particles {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
 body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: rgba(79, 24, 0, 0.545);
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    background-color: floralwhite;    
+}
+
+h3 {
+    font-family: 'Roboto Mono', monospace;
+    font-style: italic;
+    font-weight: 400;
+    color: #67d4b1;
+    text-shadow: 0 0 4px #1d372f;
 }
 
 h1 {
     padding: 1.5rem 2rem 0rem 2rem;
     margin: 0 auto;
-    color: rgba(125, 54, 23, .5);
+    color: #72cfb1;
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 .container {
-    background-color: #FEEBCD; /* blanchedalmond */
+    background-color: rgba(255, 255, 255, 0.151);
+    backdrop-filter: blur(5px);
     min-height: 90vh;
-    max-width: 600px; /* 95vw; */
+    max-width: 600px;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -65,25 +77,29 @@ main {
 }
 
 .question .btn-answer {
-    background-color: #FED69A; 
-    padding: .5rem 1.2rem;
+    background-color: #5bad93;
+    padding: .7rem 1.2rem;
     border: none;
     border-radius: 5px;
-    box-shadow: 2px 2px 4px grey;
-    font-size: .95rem; 
+    box-shadow: 2px 2px 4px rgb(4, 30, 60);
+    font-size: .95rem;
     flex-grow: 1;
     transition: 500ms;
+    cursor: pointer;
 }
 
-.question .btn-answer:active, .btn-answer:focus, .btn-answer:target,
+.question .btn-answer:active,
+.btn-answer:focus,
+.btn-answer:target,
 button:focus {
-    outline: 2px solid #808080;
-    background-color: rgba(240,255,255,.5); /* azure, 50% opacity */
+    outline: 2px solid #72cfb1;
+    background-color: #3e7a67;
+    /* azure, 50% opacity */
 }
 
-.question .btn-answer:hover, 
+.question .btn-answer:hover,
 button:hover {
-    background-color: rgba(125, 54, 23, .4);    
+    background-color: #3e7a67;
     box-shadow: 2px 2px 4px black;
 }
 
@@ -95,11 +111,13 @@ button:hover {
 }
 
 .question h2 {
-    white-space: pre-line;    
+    white-space: pre-line;
     font-size: 1.2rem;
     margin: 0;
     margin-bottom: 0.9rem;
     padding: 0;
+    color: #7de4c4;
+    text-shadow: 0 0 4px black;
 }
 
 .buttons {
@@ -111,31 +129,36 @@ button:hover {
     margin-top: 1.5rem;
 }
 
+.start-game,
 .check-answers {
-    background-color: #FED69A;
-    padding: .8rem 1.5rem;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 2px 2px 4px grey;
-    margin: 1.5rem;
-    transition: 500ms;
-}
-
-.start-game {
     padding: 1rem 2.2rem;
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 900;
     letter-spacing: 1px;
-    background-color: #FED69A;
+    background-color: #084760;
     border: none;
     border-radius: 5px;
-    box-shadow: 2px 2px 4px grey;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.307);
     transition: 500ms;
     margin-top: 2rem;
-    color: #75523A; 
+    color: #84eccb;
+    font-family: 'Roboto Mono', monospace;
+    cursor: pointer;
+}
+
+.start-game:hover,
+.start-game:active,
+.start-game:focus,
+.check-answers:hover,
+.check-answers:active,
+.check-answers:focus {
+    background-color: #06374a;
+    box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.541);
 }
 
 #game-over {
     text-align: center;
+    color: #ff5757;
+    text-shadow: 2px 2px 14px rgba(0, 0, 0, 0.541);
 }

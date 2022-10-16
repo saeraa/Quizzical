@@ -22,7 +22,7 @@ export const data = [
             }, {
 
                 "category": "JavaScript",
-                "question": "To check if three variables are equal, we are going to use_____?",
+                "question": "To check if three variables are equal, we are going to use _____?",
                 "correct_answer": "(X == B) &amp;&amp; (Y == Z)",
                 "incorrect_answers": [
                     "X = Y = Z",

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&family=Roboto+Mono&family=Roboto:ital,wght@0,400;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Cousine:wght@400;700&family=Roboto+Mono&family=Roboto:ital,wght@0,400;0,900;1,400&display=swap');
 
 code {
     font-family: 'Roboto Mono', monospace;
@@ -37,9 +37,9 @@ body {
     padding: 1rem;
 }
 
-.logo h3 {
-    font-family: 'Cousine', monospace;
-    /* font-style: italic; */
+.logo p {
+    font-family: 'Courgette', sans-serif;
+    font-size: 1.5rem;
     font-weight: 400;
     color: #67d4b1;
     text-shadow: 0 0 4px #1d372f;
@@ -98,14 +98,13 @@ main {
 .btn-answer:target,
 button:focus {
     outline: 2px solid #72cfb1;
-    background-color: #3e7a67;
-    /* azure, 50% opacity */
+    background-color: #77e4c2;
 }
 
 .question .btn-answer:hover,
 button:hover {
-    background-color: #3e7a67;
-    box-shadow: 2px 2px 4px black;
+    background-color: #4ec19c;
+    box-shadow: 0px 0px 4px black;
 }
 
 .question {
@@ -165,12 +164,12 @@ button {
     border-radius: 50%;
     font-weight: 400;
     text-transform: lowercase;
-    font-family: 'Cousine';
+    font-family: 'Roboto';
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
-    padding: 0;
+    font-size: 1.0rem;
+    padding: 1rem;
     margin-top: 2rem;
     background: linear-gradient(to top, #084760, #0f6f94);
     border: 3px solid #07415a;

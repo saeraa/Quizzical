@@ -4,9 +4,6 @@ import Question from "./Question"
 import { nanoid } from "nanoid"
 import Particles from "./Particles"
 
-
-
-
 export default function App() {
 
   const [gameOver, setGameOver] = React.useState(false)
@@ -16,10 +13,16 @@ export default function App() {
   function getQuestions() {
     const length = data[0].results.length
     let questArray = []
-    for (let i = 0; i < 5; i++) {
-      let randomNum = Math.floor(Math.random() * length)
-      questArray.push(data[0].results[randomNum])
+
+    // let's get unique questions
+    let randomSet = new Set();
+    while (randomSet.size < 5) {
+      randomSet.add(Math.floor(Math.random() * length))
     }
+
+    randomSet.forEach(number => {
+      questArray.push(data[0].results[number])
+    })
 
     return questArray.map(question => {
       const tempArray = [...question.incorrect_answers, question.correct_answer].sort()
@@ -104,7 +107,7 @@ export default function App() {
           <div className="logo">
             <span className="questionmark">?</span>
             <h1>quizzical</h1>
-            <h3>JavaScript Edition</h3>
+            <p>JavaScript Edition</p>
           </div>
           <button type="text" className="start-game" onClick={startGame}>Start game</button>
         </div>
